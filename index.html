@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Index - Append Bootstrap Template</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: Append
+  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+  <style>
+    /* Estilos del botón flotante */
+    .chat-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background-color: #3f74bd; /* Color verde de WhatsApp */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .chat-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Ícono del chat */
+    .chat-icon {
+      width: 30px;
+      height: 30px;
+      fill: white;
+    }
+
+    /* Animación de pulso */
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    /* Tooltip del botón */
+    .chat-button::before {
+      content: "Click aquí para el chatBot";
+      position: absolute;
+      right: 70px;
+      padding: 8px 12px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      font-size: 14px;
+      border-radius: 4px;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .chat-button:hover::before {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Estilos responsivos */
+    @media (max-width: 768px) {
+      .chat-button {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+      }
+
+      .chat-icon {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  </style>
+  <body class="index-page">
+    <header
+      style="background-color: rgba(0, 0, 0, 0.455)"
+      id="header"
+      class="header d-flex align-items-center fixed-top"
+    >
+      <div
+        class="container-fluid position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <img src="assets/img/logo.png" alt="" />
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a
+                style="size: 30px; color: white"
+                href="index.html#hero"
+                class="active"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a style="color: white" href="index.html#pricing">Aguachica</a>
+            </li>
+            <li><a style="color: white" href="index.html#team">Modelos</a></li>
+            <li>
+              <a style="color: white" href="index.html#services">Vissim</a>
+            </li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <div
+          style="
+            background-color: rgba(0, 0, 0, 0.573);
+            padding: 100px;
+            margin-top: 50px;
+          "
+          class="container"
+        >
+          <h1
+            style="
+              font-size: 4rem;
+              margin-bottom: 2rem;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+              color: white;
+            "
+          >
+            TRAFIMAP AGUACHICA
+          </h1>
+          <p style="color: white">
+            En TrafiMap, es una plataforma especializada en ofrecer simulaciones
+            de tráfico vehicular diseñadas con tecnología avanzada como VISSIM.
+            Nuestro objetivo es proporcionar herramientas útiles para
+            investigadores, estudiantes y profesionales interesados en el
+            análisis del flujo vehicular. Facilitamos el acceso a simulaciones
+            prácticas, descargables y listas para realizar pruebas,
+            contribuyendo al desarrollo de soluciones innovadoras en el ámbito
+            del tránsito y la movilidad
+          </p>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- Clients Section -->
+      <section id="pricing" class="hero section">
+        <div
+          style="background-color: rgba(0, 0, 0, 0.573); padding: 100px"
+          class="container"
+        >
+          <h1
+            style="
+              font-size: 4rem;
+              margin-bottom: 2rem;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+              color: white;
+            "
+          >
+            Aguachica- Cesar
+          </h1>
+          <p style="color: white">
+            Aguachica es el segundo municipio más grande del departamento del
+            Cesar, Colombia, y un importante centro económico, comercial y de
+            transporte en la región. Ubicado estratégicamente en la región sur
+            del departamento, se encuentra en la vía que conecta a la Costa
+            Caribe con el interior del país, lo que lo convierte en un punto
+            clave para el tránsito de mercancías y viajeros. Con una economía
+            basada en el comercio, la agricultura y el transporte, Aguachica es
+            conocida por su actividad agroindustrial, especialmente en cultivos
+            como palma de aceite, cacao y ganadería. Además, el municipio cuenta
+            con una creciente oferta educativa, siendo sede de universidades y
+            centros técnicos, que lo consolidan como un polo de desarrollo
+            regional. Su cultura es rica en tradiciones folclóricas y
+            gastronómicas, lo que, junto con sus paisajes y clima cálido, lo
+            convierte en un lugar atractivo tanto para los habitantes locales
+            como para los visitantes.
+          </p>
+        </div>
+      </section>
+      <!-- /Clients Section -->
+
+      <!-- Services Section -->
+      <section style="padding-top: 0" id="services" class="services section">
+        <!-- Section Title -->
+        <div
+          style="
+            background-color: rgba(0, 0, 0, 0.573);
+            padding: 100px;
+            padding-top: 0%;
+            margin-top: 50px;
+          "
+          class="container"
+        >
+          <h1
+            style="
+              font-size: 4rem;
+              margin-bottom: 2rem;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+              color: white;
+            "
+          >
+            PVT Vissim
+          </h1>
+          <p style="color: white">
+            VISSIM es un software avanzado de simulación de tráfico vehicular
+            desarrollado por PTV Group. Este programa utiliza modelos
+            microscópicos para analizar y representar el comportamiento de cada
+            vehículo y peatón en una red vial. Es ampliamente utilizado en
+            estudios de tráfico, planificación urbana y desarrollo de soluciones
+            de movilidad, permitiendo simular interacciones complejas en
+            intersecciones, carreteras y sistemas de transporte público.
+          </p>
+
+          <div class="guides-container">
+            <div class="guide-card">
+              <h2>Instalación de Vissim</h2>
+              <div class="video-container">
+                <iframe
+                  width="500"
+                  height="315"
+                  src="https://www.youtube.com/embed/YxSf-t2TGP4?si=-1SEjp5rljAWsdFV"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="guide-card">
+              <h2>Como correr una simulación</h2>
+              <div class="video-container"></div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="chat-button pulse" onclick="openChat()">
+          <img
+            src="assets/img/bot-conversacional.png"
+            alt="Chat Icon"
+            class="chat-icon"
+            style="width: 45px; height: 45px"
+          />
+        </a>
+      </section>
+      <style>
+        .vissim-section {
+          color: white;
+          padding: 2rem;
+          position: relative;
+          z-index: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .vissim-description {
+          font-size: 1.2rem;
+          line-height: 1.6;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+          margin-bottom: 2rem;
+        }
+
+        .guides-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 2rem;
+        }
+
+        .guide-card {
+          background: rgba(0, 0, 0, 0.6);
+          border-radius: 10px;
+          padding: 1.5rem;
+          transition: transform 0.3s ease;
+        }
+
+        .guide-card:hover {
+          transform: translateY(-5px);
+        }
+
+        .guide-card h2 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+          color: white;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-container {
+          width: 100%;
+          aspect-ratio: 16/9;
+          background: #000;
+          border-radius: 8px;
+          overflow: hidden;
+          margin-top: 1rem;
+        }
+
+        .video-container img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+          .vissim-section {
+            padding: 1rem;
+          }
+
+          .vissim-description {
+            font-size: 1rem;
+          }
+
+          .guide-card h2 {
+            font-size: 1.5rem;
+          }
+        }
+      </style>
+      <!-- /Services Section -->
+      <!-- Team Section -->
+      <section id="team" class="team section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Team</h2>
+          <p>
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-5">
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="member-img">
+                <img
+                  src="assets/img/team/team-1.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <p>
+                  Aliquam iure quaerat voluptatem praesentium possimus unde
+                  laudantium vel dolorum distinctio dire flow
+                </p>
+              </div>
+            </div>
+            <!-- End Team Member -->
+
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="member-img">
+                <img
+                  src="assets/img/team/team-2.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>
+                  Labore ipsam sit consequatur exercitationem rerum laboriosam
+                  laudantium aut quod dolores exercitationem ut
+                </p>
+              </div>
+            </div>
+            <!-- End Team Member -->
+
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="member-img">
+                <img
+                  src="assets/img/team/team-3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <p>
+                  Illum minima ea autem doloremque ipsum quidem quas aspernatur
+                  modi ut praesentium vel tque sed facilis at qui
+                </p>
+              </div>
+            </div>
+            <!-- End Team Member -->
+
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="member-img">
+                <img
+                  src="assets/img/team/team-4.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <p>
+                  Magni voluptatem accusamus assumenda cum nisi aut qui dolorem
+                  voluptate sed et veniam quasi quam consectetur
+                </p>
+              </div>
+            </div>
+            <!-- End Team Member -->
+
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="member-img">
+                <img
+                  src="assets/img/team/team-5.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Brian Doe</h4>
+                <span>Marketing</span>
+                <p>
+                  Qui consequuntur quos accusamus magnam quo est molestiae eius
+                  laboriosam sunt doloribus quia impedit laborum velit
+                </p>
+              </div>
+            </div>
+            <!-- End Team Member -->
+
+            <div
+              class="col-lg-4 col-md-6 member"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="member-img">
+                <img
+                  src="assets/img/team/team-6.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Josepha Palas</h4>
+                <span>Operation</span>
+                <p>
+                  Sint sint eveniet explicabo amet consequatur nesciunt error
+                  enim rerum earum et omnis fugit eligendi cupiditate vel
+                </p>
+              </div>
+            </div>
+            <!-- End Team Member -->
+          </div>
+        </div>
+      </section>
+      <!-- /Team Section -->
+    </main>
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">Append</span>
+            </a>
+            <p>
+              Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
+              nada terra videa magna derita valies darta donna mare fermentum
+              iaculis eu non diam phasellus.
+            </p>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+          >
+            <h4>Contact Us</h4>
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p>United States</p>
+            <p class="mt-4">
+              <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+            </p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span> <strong class="sitename">Append</strong>
+          <span>All Rights Reserved</span>
+        </p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll Top -->
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      function openChat() {
+        // Aquí puedes poner la lógica para abrir tu chatbot
+        // Por ejemplo, abrir una ventana modal o redirigir a otra página
+
+        // Ejemplo de redirección a WhatsApp
+        window.open("https://poe.com/ChatBot-TrafitMap", "_blank");
+
+        // O para abrir una ventana modal
+        // document.getElementById('chat-modal').style.display = 'block';
+      }
+
+      // Opcional: Remover la animación de pulso después de que el usuario interactúe
+      document
+        .querySelector(".chat-button")
+        .addEventListener("click", function () {
+          this.classList.remove("pulse");
+        });
+    </script>
+  </body>
+</html>
