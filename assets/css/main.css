@@ -50,7 +50,7 @@
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
-  background: url("https://scontent.feoh2-1.fna.fbcdn.net/v/t39.30808-6/248305214_396163191983800_8867777785016497856_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHIW0V5r-4Fv3gLpyijsZt-fWoymJdIj2Z9ajKYl0iPZrttweKpRTUIbxnzu10GjUFP9pyA5Hp16tHxqJNpX_NK&_nc_ohc=_qsvHxOWz5sQ7kNvgH5qbOy&_nc_zt=23&_nc_ht=scontent.feoh2-1.fna&_nc_gid=A4IaJOrATA8w5mws8LnIC-p&oh=00_AYB19aqyRX_hqdgme8kxR0cpt_CMjNQyvoku-qDrmFsoOg&oe=67435E6B")
+  background: url("https://scontent.feoh2-1.fna.fbcdn.net/v/t39.30808-6/248305214_396163191983800_8867777785016497856_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHIW0V5r-4Fv3gLpyijsZt-fWoymJdIj2Z9ajKYl0iPZrttweKpRTUIbxnzu10GjUFP9pyA5Hp16tHxqJNpX_NK&_nc_ohc=wXty8M4r5jkQ7kNvgHHQcSp&_nc_zt=23&_nc_ht=scontent.feoh2-1.fna&_nc_gid=A0Bd7rng4VosNNxV09joFQj&oh=00_AYBty9kFf6uFdOOqhvTLobqIDjjI2PFNSeAT6eTL9TuW2g&oe=674B0F2B")
     no-repeat center center fixed;
   background-size: cover;
   font-family: var(--default-font);
